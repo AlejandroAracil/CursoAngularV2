@@ -1,0 +1,14 @@
+<h1>Dragon Ball Personajes</h1>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+    <dbz-listl [characterList]="characters" (onDeleteCharacterEmitter)="onDeleteCharacter($event)"></dbz-listl>
+  </div>
+
+  <div class="col">
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+
+</div>
